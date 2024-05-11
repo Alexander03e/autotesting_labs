@@ -6,12 +6,18 @@
   "type": "module",
   "scripts": {
     "start": "node ./src/lab1.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lab1": "node ./src/lab1.js",
+    "lab2task": "node ./src/lab2/tests/google/google_test.js",
+    "lab2": "npm test ./src/lab2/tests/lambda/lambda_test.js",
+    "lab2mp": "npm test ./src/lab2/tests/mospolytech/mospolytech_test.js",
+    "test": "mocha --recursive --timeout 60000"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "assert": "^2.1.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.4.0",
     "selenium": "^2.20.0",
     "selenium-webdriver": "^4.20.0"
   }
